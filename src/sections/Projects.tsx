@@ -10,6 +10,7 @@ import moodIndigo from "@/assets/mood-indigo.png";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import grainImage from "@/assets/images/grain.jpg";
+import { SectionHeader } from "@/components/SectionHeader";
 
 const portfolioProjects = [
   {
@@ -94,17 +95,11 @@ export const ProjectsSection = () => {
   return (
     <section className="pb-16">
       <div className="container">
-        <div className="flex justify-center">
-          <p className="uppercase font-semibold tracking-widest bg-gradient-to-r from-emerald-300 to-sky-400 bg-clip-text text-transparent text-center">
-            Real-World Results
-          </p>
-        </div>
-        <h2 className="font-serif text-3xl md:text-5xl text-center mt-6">
-          Featured Projects
-        </h2>
-        <p className="text-center text-white/60 mt-4 max-w-md mx-auto md:text-lg lg:text-xl">
-          See how I transformed concepts into engaging digital experiences.
-        </p>
+        <SectionHeader
+          eyebrow="Real-World Results"
+          title="Featured Projects"
+          description="See how I transformed concepts into engaging digital experiences."
+        />
         <div className="flex flex-col mt-10 gap-20 md:mt-20">
           {portfolioProjects.map((project, index) => (
             <div
