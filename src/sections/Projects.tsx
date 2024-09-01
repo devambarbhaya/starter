@@ -25,7 +25,7 @@ const portfolioProjects = [
     year: "2024",
     title: "Competitions Manager",
     results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-    link: "https://techfest.org/",
+    link: "https://techfest.org/competitions",
     image: techfest,
   },
   {
@@ -73,7 +73,7 @@ const portfolioProjects = [
     year: "2022",
     title: "Events Manager",
     results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-    link: "https://moodi.org/",
+    link: "https://moodi.org/events",
     image: moodIndigo,
   },
 ];
