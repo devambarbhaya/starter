@@ -29,7 +29,7 @@ const portfolioProjects = [
   {
     company: "Techfest, IIT Bombay",
     year: "2024",
-    title: "Competitions Manager",
+    title: "Competitions Coordinator",
     results: [
       { title: "Orchestrated competition logistics" },
       { title: "Facilitated interdivisional coordination" },
@@ -50,46 +50,42 @@ const portfolioProjects = [
     link: "https://lingo-devam.vercel.app/",
     image: lingo,
   },
-  // {
-  //   company: "Personal Project",
-  //   year: "2023",
-  //   title: "Shoe Marshal",
-  //   results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-  //   link: "https://shoe-marshal-devam.vercel.app/",
-  //   image: shoeMarshal,
-  // },
-  // {
-  //   company: "Personal Project",
-  //   year: "2023",
-  //   title: "FigPro",
-  //   results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-  //   link: "https://figma-clone-phi.vercel.app/",
-  //   image: figma,
-  // },
-  // {
-  //   company: "Personal Project",
-  //   year: "2023",
-  //   title: "Gericht Restaurant",
-  //   results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-  //   link: "https://devambarbhaya.github.io/gericht-restaurant/",
-  //   image: gericht,
-  // },
-  // {
-  //   company: "Personal Project",
-  //   year: "2022",
-  //   title: "GPT-3 Explain",
-  //   results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-  //   link: "https://devambarbhaya.github.io/gpt-3-explain/",
-  //   image: gpt,
-  // },
-  // {
-  //   company: "Mood Indigo",
-  //   year: "2022",
-  //   title: "Events Manager",
-  //   results: [{ title: "1" }, { title: "2" }, { title: "3" }],
-  //   link: "https://moodi.org/events",
-  //   image: moodIndigo,
-  // },
+  {
+    company: "Personal Project",
+    year: "2023",
+    title: "Shoe Marshal",
+    results: [
+      { title: "E-Commerce Store: Next.js 14" },
+      { title: "Prisma, UploadThing, Recharts" },
+      { title: "Redis for Cart/Bag functionality" },
+    ],
+    link: "https://shoe-marshal-devam.vercel.app/",
+    image: shoeMarshal,
+  },
+  {
+    company: "Personal Project",
+    year: "2023",
+    title: "Gericht Restaurant",
+    results: [
+      { title: "React-based frontend" },
+      { title: "Leveraged Figma to design and build" },
+      { title: "Addressed the responsiveness" },
+    ],
+    link: "https://devambarbhaya.github.io/gericht-restaurant/",
+    image: gericht,
+  },
+  {
+    company: "Personal Project",
+    year: "2022",
+    title: "GPT-3 Explain",
+    results: [
+      { title: "React-based frontend" },
+      { title: "Leveraged Figma to design and build" },
+      { title: "Addressed the responsiveness" },
+    ],
+    link: "https://devambarbhaya.github.io/gpt-3-explain/",
+    image: gpt,
+  },
 ];
 
 export const ProjectsSection = () => {
@@ -105,7 +101,10 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project, index) => (
             <Card
               key={index}
-              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:mt-16 lg:px-20"
+              className="px-8 pt-8 pb-0 md:pt-12 md:px-10 lg:mt-16 lg:px-20 sticky"
+              style={{
+                top: `calc(64px + ${index * 10}px)`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
