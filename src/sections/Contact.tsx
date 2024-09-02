@@ -1,4 +1,4 @@
-import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 
 export const ContactSection = () => {
@@ -25,7 +25,7 @@ export const ContactSection = () => {
             <div>
               <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
                 <span className="font-semibold">Contact Me!</span>
-                <ArrowUpRight className="size-4" />
+                <ArrowDown className="size-4" />
               </button>
             </div>
           </div>
