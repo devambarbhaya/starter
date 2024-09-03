@@ -29,8 +29,8 @@ const portfolioProjects = [
     title: "Competitions Coordinator",
     results: [
       { title: "Orchestrated competition logistics" },
-      { title: "Facilitated interdivisional coordination" },
-      { title: "Scheduled and executed event fluidly" },
+      { title: "Manage interdivisional coordination" },
+      { title: "Scheduled, executed event fluidly" },
     ],
     link: "https://techfest.org/competitions",
     image: techfest,
