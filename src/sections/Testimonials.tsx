@@ -1,7 +1,6 @@
 import memojiAvatar1 from "@/assets/images/memoji-avatar-1.png";
 import memojiAvatar2 from "@/assets/images/memoji-avatar-2.png";
 import memojiAvatar3 from "@/assets/images/memoji-avatar-3.png";
-import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
@@ -10,10 +9,16 @@ import { Fragment } from "react";
 
 const testimonials = [
   {
-    name: "Arman Khatri",
-    position: "Marketing Manager @ Techfest",
-    text: "Devam was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
-    avatar: memojiAvatar3,
+    name: "Divyanshu Sahu",
+    position: "Web Manager @ Techfest",
+    text: "Devam's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
+    avatar: memojiAvatar1,
+  },
+  {
+    name: "Rutu Doshi",
+    position: "Product Manager @ Ayushree Pharmaceuticals",
+    text: "Devam is a true professional. He delivered our project on time and within budget. His attention to detail and ability to understand our requirements is impressive. We look forward to working with him again.",
+    avatar: memojiAvatar2,
   },
   {
     name: "Jaskaran Singh",
@@ -34,10 +39,10 @@ const testimonials = [
     avatar: memojiAvatar3,
   },
   {
-    name: "Divyanshu Sahu",
-    position: "Web Manager @ Techfest",
-    text: "Devam's work on our website has been nothing short of exceptional. He's a talented developer who is also a great communicator. We highly recommend him.",
-    avatar: memojiAvatar1,
+    name: "Arman Khatri",
+    position: "Marketing Manager @ Techfest",
+    text: "Devam was instrumental in transforming our website into a powerful marketing tool. His attention to detail and ability to understand our brand is exceptional. We're thrilled with the results!",
+    avatar: memojiAvatar3,
   },
 ];
 
