@@ -28,10 +28,12 @@ export const ContactSection = ({ id }: ContactProps) => {
                 </p>
               </div>
               <div>
-                <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
-                  <span className="font-semibold">Contact Me!</span>
-                  <ArrowDown className="size-4" />
-                </button>
+                <a href="#footer">
+                  <button className="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900">
+                    <span className="font-semibold">Contact Me!</span>
+                    <ArrowDown className="size-4" />
+                  </button>
+                </a>
               </div>
             </div>
           </div>
