@@ -17,7 +17,7 @@ export default function Home() {
       <TestimonialsSection />
       <AboutSection id="about" />
       <ContactSection id="contact" />
-      <Footer />
+      <Footer id="footer" />
     </div>
   );
 }
