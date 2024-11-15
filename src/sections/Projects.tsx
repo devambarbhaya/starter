@@ -45,6 +45,7 @@ const portfolioProjects = [
       { title: "Deployed and hosted on Vercel" },
     ],
     link: "https://lingo-devam.vercel.app/",
+    githubLink: "https://github.com/devambarbhaya/lingo",
     image: lingo,
   },
   {
@@ -57,6 +58,7 @@ const portfolioProjects = [
       { title: "Redis for Cart/Bag functionality" },
     ],
     link: "https://shoe-marshal-devam.vercel.app/",
+    githubLink: "https://github.com/devambarbhaya/shoe-marshal",
     image: shoeMarshal,
   },
   {
@@ -69,6 +71,7 @@ const portfolioProjects = [
       { title: "Addressed the responsiveness" },
     ],
     link: "https://devambarbhaya.github.io/gericht-restaurant/",
+    githubLink: "https://github.com/devambarbhaya/gericht-restaurant",
     image: gericht,
   },
   {
@@ -81,6 +84,7 @@ const portfolioProjects = [
       { title: "Addressed the responsiveness" },
     ],
     link: "https://devambarbhaya.github.io/gpt-3-explain/",
+    githubLink: "https://github.com/devambarbhaya/gpt-3-explain",
     image: gpt,
   },
 ];
@@ -130,12 +134,30 @@ export const ProjectsSection = ({ id }: ProjectsProps) => {
                         </li>
                       ))}
                     </ul>
-                    <a href={project.link} target="_blank">
-                      <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                        <span>Visit Live Site</span>
-                        <ArrowUpRight className="size-4" />
-                      </button>
-                    </a>
+                    <div className="flex items-center justify-between">
+                      <a href={project.link} target="_blank">
+                        <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                          <span>Visit Live Site</span>
+                          <ArrowUpRight className="size-4" />
+                        </button>
+                      </a>
+                      {project.githubLink && (
+                        <a href={project.githubLink} target="_blank">
+                          <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                            <span className="flex gap-2">
+                              <Image
+                                src={"/github.svg"}
+                                width={20}
+                                height={20}
+                                alt="Github"
+                              />
+                              Github
+                            </span>
+                            <ArrowUpRight className="size-4" />
+                          </button>
+                        </a>
+                      )}
+                    </div>
                   </div>
                   <div className="relative">
                     <Image
