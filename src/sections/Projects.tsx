@@ -134,10 +134,10 @@ export const ProjectsSection = ({ id }: ProjectsProps) => {
                         </li>
                       ))}
                     </ul>
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between sm:gap-x-4">
                       <a href={project.link} target="_blank">
                         <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                          <span>Visit Live Site</span>
+                          <span className="">Live</span>
                           <ArrowUpRight className="size-4" />
                         </button>
                       </a>
@@ -153,7 +153,7 @@ export const ProjectsSection = ({ id }: ProjectsProps) => {
                               />
                               Github
                             </span>
-                            <ArrowUpRight className="size-4" />
+                            <ArrowUpRight className="size-4 ml-2" />
                           </button>
                         </a>
                       )}
