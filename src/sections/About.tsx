@@ -14,6 +14,8 @@ import MySQLIcon from "@/assets/icons/mysql.svg";
 import MongoDBIcon from "@/assets/icons/mongodb.svg";
 import PrismaIcon from "@/assets/icons/prisma.svg";
 import PostgreSQLIcon from "@/assets/icons/postgresql.svg";
+import PythonIcon from "@/assets/icons/python.svg";
+import SqliteIcon from "@/assets/icons/sqlite.svg";
 import mapImage from "@/assets/images/map.png";
 import smileMemoji from "@/assets/images/memoji-smile.png";
 import { Card } from "@/components/Card";
@@ -71,6 +73,14 @@ const toolboxItems = [
   {
     title: "PostgreSQL",
     iconType: PostgreSQLIcon,
+  },
+  {
+    title: "Python",
+    iconType: PythonIcon,
+  },
+  {
+    title: "SQLite",
+    iconType: SqliteIcon,
   },
 ];
 
@@ -149,7 +159,7 @@ export const AboutSection = ({ id }: AboutProps) => {
                 <ToolboxItems
                   items={toolboxItems}
                   className=""
-                  itemsWrapperClassName="animate-move-left [animation-duration:45s]"
+                  itemsWrapperClassName="animate-move-left [animation-duration:30s]"
                 />
                 <ToolboxItems
                   items={toolboxItems}
