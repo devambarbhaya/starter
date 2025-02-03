@@ -7,6 +7,10 @@ import gpt from "@/assets/gpt.png";
 import techfest from "@/assets/techfest.png";
 import CheckIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
+import taskCLI from "@/assets/task-cli.png";
+import mazeSolver from "@/assets/maze-solver.gif";
+import asteroids from "@/assets/asteroids.gif";
+import staticSiteGenerator from "@/assets/static-site-generator.gif";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
@@ -34,6 +38,54 @@ const portfolioProjects = [
     ],
     link: "https://techfest.org/competitions",
     image: techfest,
+  },
+  {
+    company: "Personal Project",
+    year: "2024",
+    title: "Task - CLI Task Manager",
+    results: [
+      { title: "Python-based CLI tool for task management" },
+      { title: "Implemented CRUD operations by Click CLI" },
+      { title: "Packaged the project using setuptools" },
+    ],
+    githubLink: "https://github.com/devambarbhaya/cli-productivity",
+    image: taskCLI,
+  },
+  {
+    company: "Personal Project",
+    year: "2024",
+    title: "Maze Generator and Solver",
+    results: [
+      { title: "Created a scalable maze solver using BFS" },
+      { title: "Optimized BFS to efficiently find path" },
+      { title: "Solved with minimal performance degrade" },
+    ],
+    githubLink: "https://github.com/devambarbhaya/maze-solver",
+    image: mazeSolver,
+  },
+  {
+    company: "Personal Project",
+    year: "2024",
+    title: "Static Site Generator",
+    results: [
+      { title: "Python-base HTML to Markdown Converter" },
+      { title: "Recursive function to convert whole folders" },
+      { title: "Manipulated string and system resources" },
+    ],
+    githubLink: "https://github.com/devambarbhaya/static-site-generator",
+    image: staticSiteGenerator,
+  },
+  {
+    company: "Personal Project",
+    year: "2024",
+    title: "Asteroids",
+    results: [
+      { title: "Built the Asteroids game using Pygame" },
+      { title: "Managed game states and handles inputs" },
+      { title: "Understood edge cases" },
+    ],
+    githubLink: "https://github.com/devambarbhaya/asteroids",
+    image: asteroids,
   },
   {
     company: "Personal Project",
@@ -135,12 +187,14 @@ export const ProjectsSection = ({ id }: ProjectsProps) => {
                       ))}
                     </ul>
                     <div className="flex items-center justify-between sm:gap-x-4">
-                      <a href={project.link} target="_blank">
-                        <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                          <span className="">Live</span>
-                          <ArrowUpRight className="size-4" />
-                        </button>
-                      </a>
+                      {project.link && (
+                        <a href={project.link} target="_blank">
+                          <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                            <span className="">Live</span>
+                            <ArrowUpRight className="size-4" />
+                          </button>
+                        </a>
+                      )}
                       {project.githubLink && (
                         <a href={project.githubLink} target="_blank">
                           <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
